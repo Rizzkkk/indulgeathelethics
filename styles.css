@@ -1,0 +1,285 @@
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f2f2f2;
+    
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #fff; 
+    color: #333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px 0; 
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px; 
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #f77070; 
+    color: #fff; 
+    border-radius: 5px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-logo:hover {
+    text-decoration: underline;
+    background-color: #f77070;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#about {
+    padding: 10px;
+    margin: 45, 10;
+    
+
+}
+#logo{
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    font-size: 30px;
+}
+
+/* About us */
+#home {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('athletic-bg.jpg');
+    background-size: cover;
+    color: #000000;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#home p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.img {
+    height: 30px;
+    width: 20px;
+}
+    
+/* Products */
+
+#products {
+    padding: 50px;
+    background: #f2f2f2;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.product-item p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.product-item a {
+    display: inline-block;
+    background: #f77070;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.product-item a:hover {
+    background: #c76363;
+}
+
+/* testimonials */
+#testimonials {
+    padding: 50px;
+    background: #f2f2f2;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-item img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-item h4 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.testimonial-item p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+
+/* Centering the content for Products and Testimonials sections */
+
+#products, #testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#products h2, #testimonials h2 {
+    align-self: center;
+}
+
+.product-grid, .testimonial-grid {
+    justify-content: center;
+}
+
+
+
+/* Footer */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: auto;
+}
+
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 18%;
+    margin: 1%;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .product-grid, .testimonial-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-grid, .testimonial-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid, .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    nav .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #home h1 {
+        font-size: 32px;
+    }
+    #home p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+  

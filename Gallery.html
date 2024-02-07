@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indulge Athletics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Gallery.css">
+  
+</head>
+
+<body>
+    
+<!-- Navigation Bar -->
+<nav>
+    <div class="container">
+        <h1 id="logo">Indulge Athletics</h1>
+        <ul class="nav-links">
+            <li><a href="Home.html">About Us</a></li>
+            <li><a href="Products.html">Products</a>
+            <li><a href="Gallery.html">Gallery</a></li>
+
+            <li><a href="Contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--Gallery iamagee-->
+
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+        <img src="client1.jpg" style="width:300px">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+        <img src="Client2.png" style="width:80%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+        <img src="Client3.png" style="width:80%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+        <img src="Client4.png" style="width:80%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+        <img src="clint5.png" style="width:80%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+        <img src="Client6.png" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+          <img src="Client7.png" style="width:80%">
+      </div>
+  
+      
+    <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+          <img src="Client8.png" style="width:80%">
+      </div>
+
+    <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+          <img src="Client9.png" style="width:80%">
+      </div>
+       
+      
+  
+    
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+   <br>
+   <br>
+   <br>
+   <br>
+   
+   <center> <h1>Our Newest Clients</h1> </center>
+    <div class="image-container">
+        <img src='nc1.jpg' alt='Client 1'>
+        <img src='nc3.jpg' alt='Client 2'>
+        <img src='nc2.jpg' alt='Client 1'>
+        <img src='nc4.jpg' alt='Client 2'>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+<footer>
+    <p>© 2023 Indulge Athletics. All rights reserved.</p>
+    <p>Developed by: Rafael Ryan Harnisch</p>
+  </footer>
+</body>
+</html>
+
+
+<script src="Nav.js"></script>
+</body>
+</body>
+</html>

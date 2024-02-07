@@ -1,0 +1,90 @@
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Gallery Title */
+.gallery-title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image Slides */
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.mySlides img:hover {
+    transform: scale(1.05);
+}
+
+/* Thumbnail Images */
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+.demo {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Footer */
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/* Images below */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.image-container img {
+    width: 20%; 
+}

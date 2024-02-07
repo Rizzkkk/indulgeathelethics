@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <h1 id="logo">Indulge Athletics</h1>
+      <ul class="nav-links">
+        <li><a href="Home.html">About Us</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div style="text-align: center;">
+    <h1>Here is our catalog</h1>
+    <object data="catalog.pdf" type="application/pdf" width="80%" height="600px" style="margin: 0 auto;">
+      <p style="display: none;">It appears you don't have a PDF plugin for this browser.
+      No worries buddy... you can <a href="catalog.pdf">click here to
+      download the PDF file.</a></p>
+    </object>
+  </div>
+
+
+<section id="home">
+  <div class="homeus">
+  <h1>Products</h1>
+</div>
+
+
+
+
+  <!-- Product -->
+<section id="products">
+  <div class="product-grid">
+    <div class="product-item">
+      <a href="prod1.jpg" data-lightbox="product"><img src="prod1.jpg" alt="Product 1"></a>
+      <h3>Polo Shirt</h3>
+      <p>Dri-Fit Polo Shirt</p>
+      <a href="checkout.html?product=1">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod2.jpg" data-lightbox="product"><img src="prod2.jpg" alt="Product 2"></a>
+      <h3>Baseball Jersey</h3>
+      <p>Dri-Fit Baseball Jersey</p>
+      <a href="checkout.html?product=2">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod3.jpg" data-lightbox="product"><img src="prod3.jpg" alt="Product 3"></a>
+      <h3>Mandarin Collar</h3>
+      <p>Customizable Mandarin Collar</p>
+      <a href="checkout.html?product=3">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod4.jpg" data-lightbox="product"><img src="prod4.jpg" alt="Product 4"></a>
+      <h3>Racer Back</h3>
+      <p>Dri-Fit Racer Back</p>
+      <a href="checkout.html?product=4">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod5.jpg" data-lightbox="product"><img src="prod5.jpg" alt="Product 5"></a>
+      <h3>Long Sleeves</h3>
+      <p>Dri-Fit LongSleeves</p>
+      <a href="checkout.html?product=5">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod6.jpg" data-lightbox="product"><img src="prod6.jpg" alt="Product 6"></a>
+      <h3>T-Shirt</h3>
+      <p>Customizable T-Shirt</p>
+      <a href="checkout.html?product=6">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod7.jpg" data-lightbox="product"><img src="prod7.jpg" alt="Product 7"></a>
+      <h3>BasketBall Set</h3>
+      <p>BasketBall Set for every set!</p>
+      <a href="checkout.html?product=7">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod8.jpg" data-lightbox="product"><img src="prod8.jpg" alt="Product 8"></a>
+      <h3>Soccer Set</h3>
+      <p>Soccer Set for evert set! </p>
+      <a href="checkout.html?product=8">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod9.jpg" data-lightbox="product"><img src="prod9.jpg" alt="Product 9"></a>
+      <h3>Shorts</h3>
+      <p>Customizable Shorts</p>
+      <a href="checkout.html?product=9">Buy Now</a>
+    </div>
+    <div class="product-item">
+      <a href="prod11.jpg" data-lightbox="product"><img src="prod11.jpg" alt="Product 11"></a>
+      <h3>Oil Slick Cropped Shirt</h3>
+      <p>Oil slick cropped shirt design</p>
+      <a href="checkout.html?product=10">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2023 Indulge Athletics. All rights reserved.</p>
+    <p>Developed by: Rafael Ryan Harnisch</p>
+  </footer>
+
+  <script src="Nav.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      var obj = document.querySelector('object');
+      if (obj.offsetHeight === 0) {
+        obj.querySelector('p').style.display = 'block';
+      }
+    };
+  </script>
+</body>
+</html>
